@@ -1,4 +1,4 @@
-package zkyubz.huskimc.core.game.gaytesting;
+package zkyubz.huskimc.core.game.testing;
 
 import org.bukkit.entity.Player;
 import zkyubz.huskimc.core.game.match.MatchManager;

@@ -1,4 +1,4 @@
-package zkyubz.huskimc.core.game.gaytesting;
+package zkyubz.huskimc.core.game.testing;
 
 import zkyubz.huskimc.core.game.match.MatchManager;
 import zkyubz.huskimc.core.game.variables.SpawnPoint;

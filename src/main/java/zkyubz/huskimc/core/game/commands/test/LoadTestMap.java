@@ -4,7 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import zkyubz.huskimc.core.game.gaytesting.AddMatch;
+import zkyubz.huskimc.core.game.testing.AddMatch;
 import zkyubz.huskimc.core.game.match.map.MapManager;
 
 public class LoadTestMap implements CommandExecutor {

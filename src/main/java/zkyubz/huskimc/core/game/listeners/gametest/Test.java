@@ -1,5 +1,5 @@
 package zkyubz.huskimc.core.game.listeners.gametest;
 
-public class GayTest {
+public class Test {
 
 }
