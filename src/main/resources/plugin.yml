@@ -1,0 +1,25 @@
+name: HuskiGame-Core
+version: 0.1-DEVELOPMENT
+main: zkyubz.huskimc.core.game.HGame
+api-version: 1.8
+description: "HuskiGame-Core, GameCore usado en HuskiMC para minijuegos (UHCMeetup)"
+authors: ["Nua#1962"]
+commands:
+  huskigame:
+    description: "Información sobre el plugin"
+    usage: /<command>
+  test1:
+    description: F
+    usage: /<command>
+  test2:
+    description: F
+    usage: /<command>
+  test3:
+    description: F
+    usage: /<command>
+  test4:
+    description: F
+    usage: /<command>
+  test5:
+    description: F
+    usage: /<command>
