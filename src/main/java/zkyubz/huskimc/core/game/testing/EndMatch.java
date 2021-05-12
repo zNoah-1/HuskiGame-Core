@@ -9,7 +9,7 @@ import zkyubz.huskimc.core.game.variables.Match;
 import zkyubz.huskimc.core.game.variables.enums.MapState;
 
 public class EndMatch {
-    public static void suckDick(){
+    public static void call(){
         for (Player player : Bukkit.getWorld("testworld").getPlayers()){
             player.teleport(Bukkit.getWorld("world").getSpawnLocation());
         }

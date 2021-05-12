@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender;
 public class EndMatch implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        zkyubz.huskimc.core.game.testing.EndMatch.suckDick();
+        zkyubz.huskimc.core.game.testing.EndMatch.call();
         return true;
     }
 }

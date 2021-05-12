@@ -6,7 +6,7 @@ import zkyubz.huskimc.core.game.utils.ChatColor;
 import zkyubz.huskimc.core.game.variables.enums.JoinResult;
 
 public class JoinMatch {
-    public static void noHomo(Player player){
+    public static void call(Player player){
         JoinResult result = MatchManager.joinMatchSolo(player, "test");
 
         switch (result){

@@ -6,7 +6,7 @@ import zkyubz.huskimc.core.game.variables.SpawnPointList;
 import zkyubz.huskimc.core.game.variables.enums.MapState;
 
 public class AddMatch {
-    public static void gayAss() {
+    public static void call() {
         String name = "test";
         String worldName = "testworld";
         MapState state = MapState.WAITING;

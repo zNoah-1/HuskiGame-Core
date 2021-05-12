@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 public class JoinMatch implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        zkyubz.huskimc.core.game.testing.JoinMatch.noHomo((Player)commandSender);
+        zkyubz.huskimc.core.game.testing.JoinMatch.call((Player)commandSender);
         return true;
     }
 }

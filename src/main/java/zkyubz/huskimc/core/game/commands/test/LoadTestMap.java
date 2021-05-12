@@ -10,7 +10,7 @@ import zkyubz.huskimc.core.game.match.map.MapManager;
 public class LoadTestMap implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        AddMatch.gayAss();
+        AddMatch.call();
         return true;
     }
 
