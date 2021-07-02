@@ -15,4 +15,5 @@ This is my first "big" project on Java (and on Bukkit-API) so code might be conf
 - Utils for scoreboard
 
 # Execution plan
-I plan to finish the scope list and set it as "beta release", create a minigame plugin and if I feel like I should add it to the core instead, I'll add those features on it. Once everything is ready for "full release", I will post releases in SpigotMC as well.
+I plan to finish the scope list and set it as "beta release", create a minigame plugin and if I feel like I should add it to the core instead, I'll add those features on it.
+May recode in the future to improve readability (Code is a mess), not sure if add BungeeMode version into the recode.
