@@ -62,9 +62,10 @@ public class MapManager {
                     Bukkit.getConsoleSender().sendMessage(ChatColor.format(" "));
                     Bukkit.getConsoleSender().sendMessage(ChatColor.format(" &c[!] HuskiCore-Game Error"));
 
-                    switch (mode){
-                        case 1: Bukkit.getConsoleSender().sendMessage(ChatColor.format(" &f  Error trying to load the map")); break;
-                        case 2: Bukkit.getConsoleSender().sendMessage(ChatColor.format(" &f  Error trying to reload the map"));
+                    if (mode == 1) {
+                        Bukkit.getConsoleSender().sendMessage(ChatColor.format(" &f  Error trying to load the map"));
+                    } else if (mode == 2) {
+                        Bukkit.getConsoleSender().sendMessage(ChatColor.format(" &f  Error trying to reload the map"));
                     }
 
                     Bukkit.getConsoleSender().sendMessage(ChatColor.format(" "));
