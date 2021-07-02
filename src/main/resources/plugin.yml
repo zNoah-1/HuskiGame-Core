@@ -23,3 +23,6 @@ commands:
   test5:
     description: F
     usage: /<command>
+  testevent:
+    description: F
+    usage: /<command>
