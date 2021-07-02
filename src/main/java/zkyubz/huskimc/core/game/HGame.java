@@ -13,6 +13,9 @@ public class HGame extends JavaPlugin {
 
     @Override
     public void onLoad(){
+        //Setting instance
+        setInstance(this);
+        
         //Message to console
         Bukkit.getConsoleSender().sendMessage(ChatColor.format(" "));
         Bukkit.getConsoleSender().sendMessage(ChatColor.format(" &e[!] Cargando game core...  "));
@@ -29,9 +32,6 @@ public class HGame extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(ChatColor.format(" ➜ &fPara: &aTodos uwu"));
         Bukkit.getConsoleSender().sendMessage(ChatColor.format(" "));
 
-        //Setting instance
-        setInstance(this);
-
         //Registering command
         this.getCommand("huskigame").setExecutor(new MainCommand());
 
@@ -44,6 +44,9 @@ public class HGame extends JavaPlugin {
 
     @Override
     public void onDisable(){
+        //Setting instance
+        setInstance(null);
+        
         //Message to console
         Bukkit.getConsoleSender().sendMessage(ChatColor.format(" "));
         Bukkit.getConsoleSender().sendMessage(ChatColor.format("       &bHuskiCore-Game  "));
