@@ -17,10 +17,10 @@ public class TestEvents {
     }
 
     private static void addEventOne(){
-        EventManager.addRound(0, 1, 200, new TaskOne());
+        EventManager.addEvent(0, 1, 200, new TaskOne());
     }
 
     private static void addEventTwo(){
-        EventManager.addRound(0, 2, 400, new TaskTwo());
+        EventManager.addEvent(0, 2, 400, new TaskTwo());
     }
 }

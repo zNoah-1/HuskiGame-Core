@@ -2,7 +2,6 @@ package zkyubz.huskimc.core.game.match;
 
 import zkyubz.huskimc.core.game.variables.GameTask;
 import zkyubz.huskimc.core.game.variables.HuskiGameEvent;
-import zkyubz.huskimc.core.game.variables.GameEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.List;
 public class EventManager {
     static List<HuskiGameEvent> eventList = new ArrayList<>();
 
-    public static void addRound(int gameId, int round, int timer, GameTask gameTask){
+    public static void addEvent(int gameId, int round, int timer, GameTask gameTask){
         HuskiGameEvent huskiGameEvent = new HuskiGameEvent(gameId, round, timer, gameTask);
         eventList.add(huskiGameEvent);
     }
@@ -22,10 +21,6 @@ public class EventManager {
             }
         }
     }
-
-    /*public static void addEvent(HuskiGameEvent huskiGameEvent, int round){
-
-    }*/
 
     public static void removeEventsMatch(int gameId){
         List<Integer> eventsToRemove = new ArrayList<>();
@@ -46,11 +41,6 @@ public class EventManager {
             offset--;
         }
     }
-
-    //public static void removeEventsMatch(String worldName){
-        //MatchManager.getMatch();
-        //int gameId;
-    //}
 
     public static void removeEvent(int taskId){
         eventList.removeIf(huskiGameEvent -> huskiGameEvent.getTaskId() == taskId);
