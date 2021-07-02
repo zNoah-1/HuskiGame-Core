@@ -16,6 +16,7 @@ public class JoinMatch {
             case GAME_STARTED: player.sendMessage(ChatColor.format("&cMatch already started")); break;
             case NO_PERMISSION: player.sendMessage(ChatColor.format("&cNo permission to join")); break;
             case GAME_RESTARTING: player.sendMessage(ChatColor.format("&cMatch is restarting")); break;
+            default: break;
         }
     }
 }
