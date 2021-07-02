@@ -1,13 +1,16 @@
-package zkyubz.huskimc.core.game.commands.test;
+package zkyubz.huskimc.core.game.testing.testcmd.cmds;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class EndMatch implements CommandExecutor {
+import org.bukkit.entity.Player;
+import zkyubz.huskimc.core.game.testing.JoinMatch;
+
+public class JoinMatchCmd implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        zkyubz.huskimc.core.game.testing.EndMatch.call();
+        JoinMatch.call((Player)commandSender);
         return true;
     }
 }

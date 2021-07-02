@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import zkyubz.huskimc.core.game.commands.MainCommand;
-import zkyubz.huskimc.core.game.commands.test.TestCommands;
+import zkyubz.huskimc.core.game.testing.testcmd.TestCommands;
 import zkyubz.huskimc.core.game.match.map.RestartQueue;
 import zkyubz.huskimc.core.game.utils.ChatColor;
 

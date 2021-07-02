@@ -1,13 +1,12 @@
-package zkyubz.huskimc.core.game.commands.test;
+package zkyubz.huskimc.core.game.testing.testcmd.cmds;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import zkyubz.huskimc.core.game.match.MatchManager;
 import zkyubz.huskimc.core.game.utils.ChatColor;
-import zkyubz.huskimc.core.game.variables.Match;
 
-public class GameList implements CommandExecutor {
+public class GameListCmd implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
