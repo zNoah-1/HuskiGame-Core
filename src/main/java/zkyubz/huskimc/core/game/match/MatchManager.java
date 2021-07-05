@@ -107,31 +107,28 @@ public class MatchManager {
 
     public static JoinResult joinMatchSolo(Player player, int id){
         Match match = matchList.get(id);
+        MapState state = match.getState();
 
-        //Not using switch to keep code consistency
+        switch (state){
+            case WAITING:
+            case STARTING:
+                try {
+                    joinMatch(player, id);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                    return JoinResult.JOIN_ERROR;
+                }
+                return JoinResult.JOINED;
 
-        if (match.getState().equals(MapState.WAITING) || match.getState().equals(MapState.STARTING)){
-            //join Match
-            try {
-                joinMatch(player, id);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-                return JoinResult.JOIN_ERROR;
-            }
-            return JoinResult.JOINED;
-        }
-        else if (match.getState().equals(MapState.STARTING_FULL)){
-            //Match already full, game plugin should handle this message
-            return JoinResult.MATCH_FULL;
-        }
-        else if (match.getState().equals(MapState.INGAME)){
-            //Match already started, game plugin should handle this message
-            return JoinResult.GAME_STARTED;
-        }
-        else {
-            //Match restarting, game plugin should handle this message
-            return JoinResult.GAME_RESTARTING;
+            case STARTING_FULL:
+                return JoinResult.MATCH_FULL;
+
+            case INGAME:
+                return JoinResult.GAME_STARTED;
+
+            default:
+                return JoinResult.GAME_RESTARTING;
         }
     }
 
