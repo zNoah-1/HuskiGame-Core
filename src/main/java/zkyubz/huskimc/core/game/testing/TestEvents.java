@@ -13,7 +13,7 @@ public class TestEvents {
     }
 
     public static void cancelAll(){
-        EventManager.removeEventsMatch(0);
+        EventManager.removeEvents(0);
     }
 
     private static void addEventOne(){

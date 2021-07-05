@@ -5,9 +5,7 @@ import java.util.HashMap;
 public class SpawnPointList {
     private HashMap<Integer, SpawnPoint> spawnPointList = new HashMap<>();
 
-    public SpawnPointList(){
-        super();
-    }
+    public SpawnPointList(){}
 
     public SpawnPoint getSpawnPoint(int id){
         return spawnPointList.get(id);

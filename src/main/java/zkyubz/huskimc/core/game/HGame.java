@@ -55,8 +55,8 @@ public class HGame extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(ChatColor.format(" "));
     }
 
-    public static void setInstance(HGame ins){
-        instance = ins;
+    public void setInstance(HGame instance){
+        HGame.instance = instance;
     }
 
     public static HGame getInstance(){

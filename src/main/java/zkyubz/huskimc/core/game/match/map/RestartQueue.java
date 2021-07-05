@@ -26,11 +26,11 @@ public class RestartQueue {
         }
     }
 
-    public static BukkitRunnable getRunnable(){
+    public static BukkitRunnable getQueueRunnable(){
         return new BukkitRunnable() {
             @Override
             public void run() {
-                System.out.println("cicle");
+                System.out.println("cycle");
                 if (queueList.size() == 0) {
                     System.out.println("size 0");
                     taskRunning = false;
@@ -56,6 +56,6 @@ public class RestartQueue {
 
     static void startTask(){
         System.out.println("trying to start task");
-        getRunnable().runTaskTimerAsynchronously(HGame.getInstance(), 40L, 40L);
+        getQueueRunnable().runTaskTimerAsynchronously(HGame.getInstance(), 40L, 40L);
     }
 }

@@ -22,7 +22,7 @@ public class EventManager {
         }
     }
 
-    public static void removeEventsMatch(int gameId){
+    public static void removeEvents(int gameId){
         List<Integer> eventsToRemove = new ArrayList<>();
 
         HuskiGameEvent huskiGameEvent;
