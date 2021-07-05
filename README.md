@@ -1,4 +1,4 @@
-# HuskiGame-Core
+# HuskiGame-Core (Dev phase)
 Public Minecraft minigame core made by Nua, mainly focusing on MC 1.8.8 at the moment.
 
 This was initially made for HuskiMC (My server, not released) but I decided to make it public.
@@ -17,3 +17,6 @@ This is my first "big" project on Java (and on Bukkit-API) so code might be conf
 # Execution plan
 I plan to finish the scope list and set it as "beta release", create a minigame plugin and if I feel like I should add it to the core instead, I'll add those features on it.
 May recode in the future to improve readability (Code is a mess), not sure if add BungeeMode version into the recode.
+
+# What does dev phase means?
+Means that it's currently not ready for use. Some method names and classes may change names in this phase. As well as how the core behaves or treats a task.
